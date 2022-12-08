@@ -1,75 +1,149 @@
 .container {
   background: whtie;
-  border: 2px solid salmon;
+  /* border: 2px solid salmon; */
   /* height: 600px;
   width: 600px; */
   /* border-radius: 50%; */
 }
 
 .top-three {
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-around;
-
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .top-three div {
-    height: 120px;
-    width: 120px;
-    /* border: 3px solid red; */
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 123px;
+  width: 123px;
+  /* border: 3px solid red; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+/* .top-left, .top-right, .bottom-left, .bottom-right{
+    
+} */
 .top-left {
-    margin-top: 50px;
-    border: 3px solid #B0369F;
+  margin-top: 70px;
+  border: 3px solid #b0369f;
 }
 
-.top-left-wrapper, .top-right-wrapper {
-    position:relative;
-    /* border: 1px solid ; */
+.top-left-wrapper,
+.top-right-wrapper {
+  position: relative;
+  /* border: 1px solid ; */
 }
 .top-left-wrapper p {
-    height: 50px;
-    width: 3px;
-    background: black;
-    position: absolute;
-    bottom: -88px;
-    right: 30px;
-    transform: rotate(-30deg);
+  height: 50px;
+  width: 3px;
+  background: black;
+  position: absolute;
+  bottom: -98px;
+  right: 30px;
+  transform: rotate(-30deg);
 }
 
 .top-left-wrapper aside {
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    background: deeppink;
-    position: absolute;
-    bottom: -80px;
-    right: 8px;
-
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: deeppink;
+  position: absolute;
+  bottom: -95px;
+  right: 8px;
 }
 
 /* top left end  */
 
+/* top right start */
 .top-right-wrapper p {
-    bottom: -88px;
-    right: 80px;
-    transform: rotate(30deg);
+  bottom: -98px;
+  right: 74px;
+  transform: rotate(30deg);
 }
 
 .top-right-wrapper aside {
-   right: 86px;
+  right: 84px;
 }
+/* top right end  */
 
 .top-middle {
-    background: #DCF2FF;
+  background: #dcf2ff;
 }
-.top-right{
-    margin-top: 50px;
-    border: 3px solid #B0369F;
+.top-right {
+  margin-top: 70px;
+  border: 3px solid #b0369f;
+}
+
+/* bottom left start */
+.bottom-left {
+  margin-top: -70px;
+}
+.bottom-right {
+  margin-top: -70px;
+}
+.bottom-left-wrapper p {
+  top: -98px;
+  transform: rotate(30deg);
+}
+.bottom-left-wrapper aside {
+  right: 6px;
+  top: -95px;
+}
+/* bottom left end */
+
+/* bottom right start */
+.bottom-right-wrapper p {
+  top: -100px;
+  transform: rotate(-30deg);
+  right: 70px;
+}
+.bottom-right-wrapper aside {
+  right: 78px;
+  top: -97px;
+}
+/* bottom right end */
+
+/* middle start  */
+
+.middle-main-content {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.middle-left-wrapper p {
+  transform: rotate(-90deg);
+  top: 63px;
+  left: 145px;
+}
+.middle-left-wrapper aside {
+  transform: rotate(-90deg);
+  top: 95px;
+  left: 166px;
+}
+
+.middle-right-wrapper p {
+  transform: rotate(-90deg);
+  top: 63px;
+  left: -24px;
+}
+.middle-right-wrapper aside {
+  transform: rotate(-90deg);
+  top: 95px;
+  left: -56px;
+}
+
+.main-big-text {
+  border: 1px solid red;
+  width: 400px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .top-three div {
+    width: 100px;
+    height: 100px;
+  }
 }
