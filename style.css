@@ -1,26 +1,21 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+
 .container {
   padding: 20px 50px;
   font-family: "Roboto", sans-serif;
   width: 900px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
+/* top left start  */
 .top-three {
   border-radius: 50%;
   display: flex;
   justify-content: space-around;
-  /* background: #000; */
 }
 
 .top-three div {
   height: 125px;
   width: 125px;
-  /* border: 3px solid red; */
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -30,9 +25,6 @@
   padding: 2px 7px;
 }
 
-/* .top-left, .top-right, .bottom-left, .bottom-right{
-    
-} */
 .top-left {
   margin-top: 70px;
   border: 4px solid #b0369f;
@@ -41,10 +33,9 @@
 .top-left-wrapper,
 .top-right-wrapper {
   position: relative;
-  /* border: 1px solid ; */
 }
 .top-left-wrapper p {
-  height: 50px; 
+  height: 50px;
   width: 3px;
   background: rgb(61, 59, 59);
   position: absolute;
@@ -62,8 +53,8 @@
   bottom: -88px;
   right: 7px;
 }
-
 /* top left end  */
+
 
 /* top middle start  */
 .top-middle-wrapper p {
@@ -76,6 +67,11 @@
   top: 175px;
   right: 61px;
 }
+.top-middle {
+  background: #dcf2ff;
+}
+/* top middle end  */
+
 
 /* top right start */
 .top-right-wrapper p {
@@ -87,23 +83,21 @@
 .top-right-wrapper aside {
   right: 112px;
 }
-/* top right end  */
 
-.top-middle {
-  background: #dcf2ff;
-}
 .top-right {
   margin-top: 70px;
   border: 4px solid #b0369f;
 }
+/* top right end  */
+
+
 
 /* bottom left start */
 .bottom-left {
   margin-top: -70px;
+  border: 4px solid #ce7aa7;
 }
-.bottom-right {
-  margin-top: -70px;
-}
+
 .bottom-left-wrapper p {
   top: -95px;
   transform: rotate(30deg);
@@ -113,6 +107,7 @@
   top: -90px;
 }
 /* bottom left end */
+
 
 /* bottom right start */
 .bottom-right-wrapper p {
@@ -124,9 +119,11 @@
   right: 112px;
   top: -90px;
 }
-.bottom-left {
-  border: 4px solid #ce7aa7;
+.bottom-right {
+  margin-top: -70px;
 }
+/* bottom right end  */
+
 .bottom-right {
   border: 4px solid #ce7aa7;
 }
@@ -220,13 +217,67 @@
   }
 }
 
+/* mobile device layout start  */
+.mobile-container {
+  display: none;
+}
+.mobile-container h2{
+  margin-left: 10px;
+}
 
+.mobile-wrapper {
+  display: flex;
+}
+.line {
+  height: 395px;
+  background: rgb(58, 56, 56);
+  width: 5px;
+  display: flex;
+}
 
-@media screen and (max-width: 600px) {
-  .main-big-text {
-    font-size: 18px;
-    margin-top: 20px;
+.items p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 70px;
+  display: flex;
+}
+
+.items p::before {
+  content: "";
+  height: 5px;
+  width: 60px;
+  background: rgb(88, 86, 86);
+  position: absolute;
+  margin-top: 10px;
+  left: 13px;
+}
+
+.circle {
+  height: 15px;
+  width: 15px;
+  background: deeppink;
+  border-radius: 50%;
+  display: block;
+  margin-left: -11px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 620px) {
+  .mobile-container {
+    display: block;
   }
+  .container {
+    display: none;
+  }
+
+  /* .top-three div {
+    border: none;
+    width: none;
+    display: block;
+    background: none;
+    text-align:left;
+  } */
 }
 @media screen and (max-width: 500px) {
   /* .top-three div {
